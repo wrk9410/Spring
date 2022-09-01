@@ -1,0 +1,9 @@
+스프링 사용을 위해 플러그인 깔아야 됨
+
+1.spring tool sts 검색
+2. 첫 화면은 spring boot를 위한 것이기에 내려서 3을 다운 받아야됨(boot는 2022 올해부터 실행한 것이여서 기존의 회사들은 3을 사용한다고 하심)
+3.Spring Tool Suite 3.9.15 > full distribution on Eclipse 4.16.zip파일 클릭
+4.편한 폴더에 압축풀기(첫번째 문서, 두번째 톰캣, 세번째가 이클립스)
+4-1.원래라면 목록?이 있지만 학원에서는 없어서 설정해줘야 함
+  !.New > Spring Legacy Project > Configure templates... > spring defaults의 주소 변경  (https://green424minee.github.io/sts3-legacy-defaults-descriptors/descriptors-3.0.xml)
+

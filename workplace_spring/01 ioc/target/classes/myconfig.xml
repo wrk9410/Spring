@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="mybeans.MyBean" id="first"></bean>
+	
+	<bean class="mybeans.MyLogic" id ="second">
+		<!-- 생성자 넣기 ref="(id)", 여러개도 가능 -->
+		<constructor-arg ref="first"></constructor-arg>
+	</bean>
+	
+	<bean class="mybeans.MyStatefulObj" id="third" scope="prototype">
+		<!-- value로 값을 넣음 -->
+		<constructor-arg value="my-name"></constructor-arg>
+		<constructor-arg value="100"></constructor-arg>
+	</bean>
+	
+	<bean class="mybeans.MyStatefulObj" id="fourth" scope="prototype" primary="true">
+		<!-- property로 값을 넣음(setter)
+			!name에는 필드명 작성 
+			primary="true"의 경우 주요 bean으로 설정해서 동일한 class를 호출할 때 기본값으로 호출함 -->
+		<property name="name" value="bysetter"></property>
+		<property name="number" value="400"></property>
+	</bean>
+	
+	
+</beans>

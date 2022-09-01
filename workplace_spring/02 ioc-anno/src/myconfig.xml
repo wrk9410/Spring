@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- 어노테이션?: 하단 Namespaces > beans 클릭 > context 체크 -->
+
+	<!-- base-package="(패키지명)", 해당 패키지의 @Component가 붙어있는 걸 확인하고 붙어있으면 bean으로 등록해줌 -->
+	<context:component-scan base-package="mybeans"></context:component-scan>
+	<!-- component의 의존성 받아오게 하기 -->
+	<context:annotation-config></context:annotation-config>	
+</beans>

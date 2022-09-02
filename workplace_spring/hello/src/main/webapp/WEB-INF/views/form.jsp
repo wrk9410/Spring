@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>입력칸</title>
+<title>print form</title>
 </head>
 <body>
-	<form action="print" method="POST">
-		<input type="text" name="param" />
+	<form method="POST"> <!-- action은 생략해도 됨 -->
+		<input type="text" name="text" />
 		<input type="submit" value="보냄" />
 	</form>
 </body>

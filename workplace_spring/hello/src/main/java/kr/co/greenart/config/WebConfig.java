@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@EnableWebMvc //WebMvc 기능 사용 가능하게 해주는 명령어
+@EnableWebMvc
 @ComponentScan("kr.co.greenart")
 public class WebConfig implements WebMvcConfigurer {
 	@Override

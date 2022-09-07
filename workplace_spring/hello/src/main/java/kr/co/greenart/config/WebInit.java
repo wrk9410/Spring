@@ -8,7 +8,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
-	protected Class<?>[] getRootConfigClasses() { // root-context.xml�� ������ �ϱ⿡ �����ص� ��
+	protected Class<?>[] getRootConfigClasses() {
 		return new Class[] {RootConfig.class};
 	}
 

@@ -39,7 +39,7 @@ public class CarRepositoryMySql implements CarRepository {
 
 	@Override
 	public Car getById(int id) {
-		return jdbcTemplate.queryForObject("SELECT * FROM cars WHERE id=?", mapper);
+		return jdbcTemplate.queryForObject("SELECT * FROM cars WHERE id=?", mapper, id);
 	}
 
 	@Override

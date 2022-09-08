@@ -27,9 +27,9 @@ public class CarRepoTest {
 		assertNotNull(repository);
 	}
 	
-	@BeforeClass
+	@BeforeClass // 클래스 전 실행
 	public static void addTestData() {
-		// 테스트 클래스 수행전에 실행됩니다~~ 스태틱하게 선언
+		// BeforeClass: 테스트 클래스 수행전에 실행됩니다~~ 스태틱하게 선언(AfterClass도 있음)
 		
 	}
 	

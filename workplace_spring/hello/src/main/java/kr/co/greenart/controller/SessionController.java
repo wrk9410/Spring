@@ -35,7 +35,7 @@ public class SessionController {
 	@GetMapping("/model")
 	public String addModelValue(Model model) {
 		model.addAttribute("modelname", "modelvalue");
-		return "모델의 값 설정";
+		return "모델의 값 설정"; // view가 들어감
 	}
 
 	@GetMapping("/modelcheck")

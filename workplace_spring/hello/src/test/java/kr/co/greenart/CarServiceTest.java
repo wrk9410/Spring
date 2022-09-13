@@ -30,9 +30,9 @@ public class CarServiceTest {
 	@Test(expected = DataAccessException.class) // expected = (예외명): (예외명)의 예외가 발생해야 통과되게 설정
 	public void bulkInsert() {
 		List<Car> list = Arrays.asList(new Car(0, "AAA", 100)
-				,new Car(0, "BBB", 100)
-				,new Car(0, "AAA", 100)
-				,new Car(0, "CCC", 100));
+				, new Car(0, "BBB", 100)
+				, new Car(0, "AAA", 100)
+				, new Car(0, "CCC", 100));
 		
 		int[] result = service.bulkInsert(list);
 		assertNull(result);

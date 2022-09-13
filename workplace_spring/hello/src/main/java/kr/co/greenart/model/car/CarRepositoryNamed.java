@@ -13,14 +13,14 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Primary
+@Primary // 주로 사용할 Bean을 설정할 때
 public class CarRepositoryNamed implements CarRepository {
 	@Autowired
 	private NamedParameterJdbcTemplate jdbc;
 
 	@Override
 	public List<Car> getAll() {
-		return jdbc.query("SELECT * FROM cars", new BeanPropertyRowMapper(Car.class));
+		return jdbc.query("SELECT * FROM cars", new BeanPropertyRowMapper<Car>(Car.class));
 		// BeanPropertyRowMapper: 알아서 setter를 호출?
 	}
 

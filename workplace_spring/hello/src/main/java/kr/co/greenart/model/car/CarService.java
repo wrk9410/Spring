@@ -3,12 +3,14 @@ package kr.co.greenart.model.car;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class CarService {
 	@Autowired
+	// @Qualifier("이름"): Bean의 이름 작성
 	private CarRepository repo;
 	
 	public List<Car> list() {

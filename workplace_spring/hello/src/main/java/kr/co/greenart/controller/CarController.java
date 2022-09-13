@@ -43,7 +43,7 @@ public class CarController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<String> add(@RequestBody Car car) {
+	public ResponseEntity<String> add(@RequestBody Car car) { // @RequestBody: 요청 Body에 Car타입 자료가 있다고 컴퓨터에 알려줌
 		logger.info(car.toString());
 		service.add(car);
 		/* POST로 전달받은 Car의  JSON방식 내용을 추가하기 */
